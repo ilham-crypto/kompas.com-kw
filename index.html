@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompas.com KW</title>
+    <!--Engine Vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
+    <script type="module">
+    
+    import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.esm.browser.js'
+    
+    </script>
+    <!-- Menyisipkan Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue.dist.vue.js"></script>
+    <!--Vue  js engginer 2-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+    margin: 0;
+}
+
+.container {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+
+.bg-image {
+    width: 100%;
+    height: 403.2px;
+    background: url('pp.jpg') no-repeat center;
+    background-size: contain;
+}
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .topnav {
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   .topnav a {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+   }
+   
+   .topnav a:hover {
+     background-color: #ddd;
+     color: black;
+   }
+   
+   .topnav a.active {
+     background-color: #4CAF50;
+     color: white;
+   }
+   
+   .topnav .icon {
+     display: none;
+   }
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#">ILHAM SANTOSO.COM</a>
+        <a href="#news">News</a>
+        <a href="#tren">Tren</a>
+        <a href="#health">Health</a>
+        <a href="#food">Food</a>
+        <a href="#edukasi">Edukasi</a>
+        <a href="#inspirasli">Inspirasli</a>
+        <a href="#money">Money</a>
+        <a href="#tekno">Tekno</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#homey">Homey</a>
+        <a href="#properti">Properti</a>
+        <a href="#bola">Bola</a>
+        <a href="#travel">Travel</a>
+        <a href="#otomotif">Otomotif</a>
+        <a href="#sains">Sains</a>
+        <a href="#hype">Hype</a>
+        <a href="#vik">Vik</a>
+        <a href="#kolom">Kolom</a>
+        <a href="#jeo">Jeo</a>
+        <a href="#images">Images</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div><br><br>
+      <div class="container">
+    <div id="example-1">
+                <h2 v-for="item in items" :key="item.message"> {{ item.message }}</h2><br>
+                <main class="">
+                    <div class="bg-image"></div>
+                </main><br>      
+    </div>
+    <div id="example-2">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-3">
+       <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-4">
+       <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-5">
+       <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-6">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+     </div>
+     <div id="example-7">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+     </div>
+     <div id="example-8">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-9">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-10">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    <div id="example-11">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+        <div id="example-12">
+        <p v-for="item in items" :key="item.message"> {{ item.message }}</p>
+    </div>
+    </div>
+    <script>
+        var example1 = new Vue({
+            el: '#example-1',
+            data: {
+                items: [
+                    { message: 'Ferencvaros Vs Barcelona, Misi Pasukan Ronald Koeman Jaga Rekor di Liga Champions'},
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-2',
+            data: {
+                items: [
+                    { message: 'KOMPAS.com - Pelatih Barcelona, Ronald Koeman, menegaskan bahwa timnya bertekad meraih kemenangan ketika menghadapi tuan rumah Ferencvaros pada matchday kelima Liga Champions 2020-2021',}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-3',
+            data: {
+                items: [
+                    { message: 'Laga Ferencvaros vs Barcelona pada pertandingan kelima fase grup Liga Champions bakal digelar di Stadion Puskas Arena, Budapest, Rabu (2/12/2020) waktu setempat atau Kamis (3/12/2020) dini hari WIB',}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-4',
+            data: {
+                items: [
+                    { message: 'Barcelona, dan juga Juventus, telah memastikan diri lolos ke babak 16 besar Liga Champions musim ini'}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-5',
+            data: {
+                items: [
+                    { message: 'Mengoleksi 12 poin dari empat laga, pasukan Ronald Koeman itu kokoh di puncak klasemen Grup G'}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-6',
+            data: {
+                items: [
+                    { message: 'Barca -sebutan Barcelona- unggul tiga angka atas Juventus yang menempati peringkat kedua'}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-7',
+            data: {
+                items: [
+                    { message: 'Meskipun sudah mengantongi tiket ke babak 16 besar, Barcelona tetap memburu kemenangan di markas Ferencvaros. Koeman ingin anak asuhnya menjaga rekor selalu menang di Liga Champions musim ini sekaligus mempertahankan posisi puncak klasemen Grup G.'}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-8',
+            data: {
+                items: [
+                    { message: '"Hal terpenting adalah kami lolos ke babak selanjutnya, dan kami telah melakukannya di Kiev," ucap Ronald Koeman menjelang laga Ferencvaros vs Barcelona, dikutip dari laman resmi UEFA."Namun, kami adalah Barca. Mentalitas kami adalah memenangi setiap pertandingan," imbuh juru taktik asal Belanda tersebut.'
+                    }
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-9',
+            data: {
+                items: [
+                    { message: '"Kami ingin mengakhiri fase grup dengan berada di puncak. Kami unggul tiga poin atas Juventus, tetapi masih ada dua pertandingan tersisa," ujar Koeman menegaskan.'}
+                ]
+            }
+        });
+        var example1 = new Vue({
+            el: '#example-10',
+            data: {
+                items: [
+                    { message: 'Melawat ke markas Ferencvaros, Koeman tidak membawa Lionel Messi yang diistirahatkan. Selain Messi, nama lain yang tidak masuk skuad Barca untuk laga ini adalah Philippe Coutinho. Meski tanpa Messi, Serhiy Rebrov selaku pelatih Ferencvaros menyebut Barcelona tetap merupakan tim berbahaya.'}
+                ]
+            }
+        });  var example1 = new Vue({
+            el: '#example-11',
+            data: {
+                items: [
+                    { message: '"Barcelona menampilkan tim pelapis ketika melawan Dynamo Kiev, tetapi mereka sama kuatnya, tidak peduli siapa yang bermain," ucap Rebrov. Ferencvaros yang baru mengumpulkan satu poin dari empat pertandingan saat ini berada di dasar klasemen Grup G.'}
+                ]
+            }
+        });  var example1 = new Vue({
+            el: '#example-12',
+            data: {
+                items: [
+                    { message: 'Pada pertemuan pertama yang dilangsungkan di Camp Nou, Barcelona berhasil mengalahkan Ferencvaros dengan skor telak 5-1.'}
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
